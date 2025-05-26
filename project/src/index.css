@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 font-sans;
+  }
+  
+  /* Typography styles for blog content */
+  .prose h2 {
+    @apply text-2xl font-bold text-primary-900 mt-10 mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-bold text-primary-900 mt-8 mb-3;
+  }
+  
+  .prose p {
+    @apply mb-6 leading-relaxed;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-6 pl-6;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose a {
+    @apply text-accent-600 hover:text-accent-800 transition-colors;
+  }
+  
+  .prose blockquote {
+    @apply pl-4 border-l-4 border-accent-200 text-gray-600 italic my-6;
+  }
+}
